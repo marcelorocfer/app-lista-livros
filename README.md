@@ -1,3 +1,20 @@
+## Projeto CRUD de Livros e API do Clima.
+
+Esse projeto foi desenvolvido seguindo as orientações para o teste seletivo da SoftDesign, com tela de login e cadastro para o usuário se autenticar e ter acesso ao sistema. Após o cadastro e login o usuário poderá ter acesso às seguintes funcionalidades:
+- Criação, Edição, Exclusão, Listagem de livros com paginação e filtragem.
+- Página com o Clima da região, gerado através da API https://hgbrasil.com/status/weather.
+
+Para esse sistema foram utilizados o pacote l5-repository para estruturação do código através de services e repositories, o pacote torann/geoip para a utilização do IP remoto do usuário com a finalidade de conseguir a localização, latitude, longitude e IP para uma resposta do clima da região.
+
+Após clonar o projeto, e iniciar as configurações iniciais de banco de dados no arquivo .env é necessário alterar também:
+
+- No arquivo .env criar definir a variável APP_KEY_API_WEATHER com a chave da API gerada em https://hgbrasil.com/status/weather
+- No arquivo .env alterar CACHE_DRIVER para array: CACHE_DRIVER=array
+- Esse projeto foi desenvolvido utilizando o Docker Sail do Laravel https://laravel.com/docs/9.x/sail
+- Após as configurações, executar o comando para criar as migrations.
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
