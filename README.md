@@ -8,7 +8,7 @@ Para esse sistema foram utilizados o pacote l5-repository para estruturação do
 
 Após clonar o projeto, e iniciar as configurações iniciais de banco de dados no arquivo .env é necessário alterar também:
 
-- No arquivo .env criar definir a variável APP_KEY_API_WEATHER com a chave da API gerada em https://hgbrasil.com/status/weather
+- No arquivo .env definir a variável APP_KEY_API_WEATHER com a chave da API gerada em https://hgbrasil.com/status/weather
 - No arquivo .env alterar CACHE_DRIVER para array: CACHE_DRIVER=array
 - Esse projeto foi desenvolvido utilizando o Docker Sail do Laravel https://laravel.com/docs/9.x/sail
 - Após as configurações, executar o comando para criar as migrations.
